@@ -1,0 +1,45 @@
+c:\users\rodrigo\documents\visual studio 2015\Projects\Shift\Shift\bin\Debug\Shift.exe.config
+c:\users\rodrigo\documents\visual studio 2015\Projects\Shift\Shift\bin\Debug\Shift.exe
+c:\users\rodrigo\documents\visual studio 2015\Projects\Shift\Shift\bin\Debug\Shift.pdb
+c:\users\rodrigo\documents\visual studio 2015\Projects\Shift\Shift\obj\Debug\Shift.csprojResolveAssemblyReference.cache
+c:\users\rodrigo\documents\visual studio 2015\Projects\Shift\Shift\obj\Debug\Shift.Form1.resources
+c:\users\rodrigo\documents\visual studio 2015\Projects\Shift\Shift\obj\Debug\Shift.Properties.Resources.resources
+c:\users\rodrigo\documents\visual studio 2015\Projects\Shift\Shift\obj\Debug\Shift.csproj.GenerateResource.Cache
+c:\users\rodrigo\documents\visual studio 2015\Projects\Shift\Shift\obj\Debug\Shift.exe
+c:\users\rodrigo\documents\visual studio 2015\Projects\Shift\Shift\obj\Debug\Shift.pdb
+C:\Users\gtw\Documents\Visual Studio 2019\Shift\Shift\bin\Debug\Shift.exe.config
+C:\Users\gtw\Documents\Visual Studio 2019\Shift\Shift\bin\Debug\Shift.exe
+C:\Users\gtw\Documents\Visual Studio 2019\Shift\Shift\bin\Debug\Shift.pdb
+C:\Users\gtw\Documents\Visual Studio 2019\Shift\Shift\obj\Debug\Shift.csprojAssemblyReference.cache
+C:\Users\gtw\Documents\Visual Studio 2019\Shift\Shift\obj\Debug\Shift.Form1.resources
+C:\Users\gtw\Documents\Visual Studio 2019\Shift\Shift\obj\Debug\Shift.Properties.Resources.resources
+C:\Users\gtw\Documents\Visual Studio 2019\Shift\Shift\obj\Debug\Shift.csproj.GenerateResource.cache
+C:\Users\gtw\Documents\Visual Studio 2019\Shift\Shift\obj\Debug\Shift.exe
+C:\Users\gtw\Documents\Visual Studio 2019\Shift\Shift\obj\Debug\Shift.pdb
+C:\Git\robot-movil-ia\Shift\Shift\obj\Debug\Shift.csprojAssemblyReference.cache
+C:\Git\robot-movil-ia\Shift\Shift\obj\Debug\Shift.Form1.resources
+C:\Git\robot-movil-ia\Shift\Shift\obj\Debug\Shift.Properties.Resources.resources
+C:\Git\robot-movil-ia\Shift\Shift\obj\Debug\Shift.csproj.GenerateResource.cache
+C:\Git\robot-movil-ia\Shift\Shift\obj\Debug\Shift.exe
+C:\Git\robot-movil-ia\Shift\Shift\obj\Debug\Shift.pdb
+C:\Git\robot-movil-ia\Shift\Shift\bin\Debug\Shift.exe.config
+C:\Git\robot-movil-ia\Shift\Shift\bin\Debug\Shift.exe
+C:\Git\robot-movil-ia\Shift\Shift\bin\Debug\Shift.pdb
+C:\Git\robot-movil-ia\Shift_v1\Shift\bin\Debug\Shift.exe.config
+C:\Git\robot-movil-ia\Shift_v1\Shift\bin\Debug\Shift.exe
+C:\Git\robot-movil-ia\Shift_v1\Shift\bin\Debug\Shift.pdb
+C:\Git\robot-movil-ia\Shift_v1\Shift\obj\Debug\Shift.csprojAssemblyReference.cache
+C:\Git\robot-movil-ia\Shift_v1\Shift\obj\Debug\Shift.Form1.resources
+C:\Git\robot-movil-ia\Shift_v1\Shift\obj\Debug\Shift.Properties.Resources.resources
+C:\Git\robot-movil-ia\Shift_v1\Shift\obj\Debug\Shift.csproj.GenerateResource.cache
+C:\Git\robot-movil-ia\Shift_v1\Shift\obj\Debug\Shift.exe
+C:\Git\robot-movil-ia\Shift_v1\Shift\obj\Debug\Shift.pdb
+C:\Git\robot-movil-ia\Shift_v02\Shift\bin\Debug\Shift.exe.config
+C:\Git\robot-movil-ia\Shift_v02\Shift\bin\Debug\Shift.exe
+C:\Git\robot-movil-ia\Shift_v02\Shift\bin\Debug\Shift.pdb
+C:\Git\robot-movil-ia\Shift_v02\Shift\obj\Debug\Shift.csprojAssemblyReference.cache
+C:\Git\robot-movil-ia\Shift_v02\Shift\obj\Debug\Shift.Form1.resources
+C:\Git\robot-movil-ia\Shift_v02\Shift\obj\Debug\Shift.Properties.Resources.resources
+C:\Git\robot-movil-ia\Shift_v02\Shift\obj\Debug\Shift.csproj.GenerateResource.cache
+C:\Git\robot-movil-ia\Shift_v02\Shift\obj\Debug\Shift.exe
+C:\Git\robot-movil-ia\Shift_v02\Shift\obj\Debug\Shift.pdb
