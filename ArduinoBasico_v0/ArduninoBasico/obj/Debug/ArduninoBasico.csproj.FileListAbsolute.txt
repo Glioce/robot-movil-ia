@@ -1,0 +1,30 @@
+c:\users\investigación\documents\visual studio 2012\Projects\ArduninoBasico\ArduninoBasico\bin\Debug\ArduninoBasico.exe.config
+c:\users\investigación\documents\visual studio 2012\Projects\ArduninoBasico\ArduninoBasico\bin\Debug\ArduninoBasico.exe
+c:\users\investigación\documents\visual studio 2012\Projects\ArduninoBasico\ArduninoBasico\bin\Debug\ArduninoBasico.pdb
+c:\users\investigación\documents\visual studio 2012\Projects\ArduninoBasico\ArduninoBasico\obj\Debug\ArduninoBasico.Form1.resources
+c:\users\investigación\documents\visual studio 2012\Projects\ArduninoBasico\ArduninoBasico\obj\Debug\ArduninoBasico.Properties.Resources.resources
+c:\users\investigación\documents\visual studio 2012\Projects\ArduninoBasico\ArduninoBasico\obj\Debug\ArduninoBasico.csproj.GenerateResource.Cache
+c:\users\investigación\documents\visual studio 2012\Projects\ArduninoBasico\ArduninoBasico\obj\Debug\ArduninoBasico.exe
+c:\users\investigación\documents\visual studio 2012\Projects\ArduninoBasico\ArduninoBasico\obj\Debug\ArduninoBasico.pdb
+c:\users\investigación\documents\visual studio 2012\Projects\ArduninoBasico\ArduninoBasico\obj\Debug\ArduninoBasico.csprojResolveAssemblyReference.cache
+C:\prinves01\RESPALDO\Docencia\Semestre 2018 A\Projects\ArduninoBasico\ArduninoBasico\bin\Debug\ArduninoBasico.exe.config
+C:\prinves01\RESPALDO\Docencia\Semestre 2018 A\Projects\ArduninoBasico\ArduninoBasico\obj\Debug\ArduninoBasico.exe
+C:\prinves01\RESPALDO\Docencia\Semestre 2018 A\Projects\ArduninoBasico\ArduninoBasico\obj\Debug\ArduninoBasico.pdb
+C:\prinves01\RESPALDO\Docencia\Semestre 2018 A\Projects\ArduninoBasico\ArduninoBasico\bin\Debug\ArduninoBasico.exe
+C:\prinves01\RESPALDO\Docencia\Semestre 2018 A\Projects\ArduninoBasico\ArduninoBasico\bin\Debug\ArduninoBasico.pdb
+C:\prinves01\RESPALDO\Docencia\Semestre 2018 A\Projects\ArduninoBasico\ArduninoBasico\obj\Debug\ArduninoBasico.csprojResolveAssemblyReference.cache
+C:\prinves01\RESPALDO\Docencia\Semestre 2018 A\Projects\ArduninoBasico\ArduninoBasico\obj\Debug\ArduninoBasico.Form1.resources
+C:\prinves01\RESPALDO\Docencia\Semestre 2018 A\Projects\ArduninoBasico\ArduninoBasico\obj\Debug\ArduninoBasico.Properties.Resources.resources
+C:\prinves01\RESPALDO\Docencia\Semestre 2018 A\Projects\ArduninoBasico\ArduninoBasico\obj\Debug\ArduninoBasico.csproj.GenerateResource.Cache
+C:\Users\Usuario\Documents\Visual Studio 2012\Projects\ArduinoBasico\ArduninoBasico\bin\Debug\ArduninoBasico.exe.config
+C:\Users\Usuario\Documents\Visual Studio 2012\Projects\ArduinoBasico\ArduninoBasico\obj\Debug\ArduninoBasico.exe
+C:\Users\Usuario\Documents\Visual Studio 2012\Projects\ArduinoBasico\ArduninoBasico\obj\Debug\ArduninoBasico.pdb
+C:\Git\robot-movil-ia\ArduinoBasico_v0\ArduninoBasico\bin\Debug\ArduninoBasico.exe.config
+C:\Git\robot-movil-ia\ArduinoBasico_v0\ArduninoBasico\bin\Debug\ArduninoBasico.exe
+C:\Git\robot-movil-ia\ArduinoBasico_v0\ArduninoBasico\bin\Debug\ArduninoBasico.pdb
+C:\Git\robot-movil-ia\ArduinoBasico_v0\ArduninoBasico\obj\Debug\ArduninoBasico.csprojAssemblyReference.cache
+C:\Git\robot-movil-ia\ArduinoBasico_v0\ArduninoBasico\obj\Debug\ArduninoBasico.Form1.resources
+C:\Git\robot-movil-ia\ArduinoBasico_v0\ArduninoBasico\obj\Debug\ArduninoBasico.Properties.Resources.resources
+C:\Git\robot-movil-ia\ArduinoBasico_v0\ArduninoBasico\obj\Debug\ArduninoBasico.csproj.GenerateResource.cache
+C:\Git\robot-movil-ia\ArduinoBasico_v0\ArduninoBasico\obj\Debug\ArduninoBasico.exe
+C:\Git\robot-movil-ia\ArduinoBasico_v0\ArduninoBasico\obj\Debug\ArduninoBasico.pdb
