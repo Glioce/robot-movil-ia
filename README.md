@@ -21,3 +21,6 @@ Se puede usar un timer y así evitamos usar un thread con método estático. Cre
 https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.timer?view=netframework-4.8  
 https://docs.microsoft.com/en-us/dotnet/framework/winforms/controls/run-procedures-at-set-intervals-with-wf-timer-component  
 
+Separar string por coma  
+https://docs.microsoft.com/en-us/dotnet/csharp/how-to/parse-strings-using-split  
+https://docs.microsoft.com/en-us/dotnet/api/system.stringsplitoptions?view=netframework-4.8#System_StringSplitOptions_RemoveEmptyEntries  
