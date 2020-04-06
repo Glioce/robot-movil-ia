@@ -1,0 +1,30 @@
+c:\users\investigación\documents\visual studio 2012\Projects\ArduninoBasico\ArduninoBasico\bin\Debug\ArduninoBasico.exe.config
+c:\users\investigación\documents\visual studio 2012\Projects\ArduninoBasico\ArduninoBasico\bin\Debug\ArduninoBasico.exe
+c:\users\investigación\documents\visual studio 2012\Projects\ArduninoBasico\ArduninoBasico\bin\Debug\ArduninoBasico.pdb
+c:\users\investigación\documents\visual studio 2012\Projects\ArduninoBasico\ArduninoBasico\obj\Debug\ArduninoBasico.Form1.resources
+c:\users\investigación\documents\visual studio 2012\Projects\ArduninoBasico\ArduninoBasico\obj\Debug\ArduninoBasico.Properties.Resources.resources
+c:\users\investigación\documents\visual studio 2012\Projects\ArduninoBasico\ArduninoBasico\obj\Debug\ArduninoBasico.csproj.GenerateResource.Cache
+c:\users\investigación\documents\visual studio 2012\Projects\ArduninoBasico\ArduninoBasico\obj\Debug\ArduninoBasico.exe
+c:\users\investigación\documents\visual studio 2012\Projects\ArduninoBasico\ArduninoBasico\obj\Debug\ArduninoBasico.pdb
+c:\users\investigación\documents\visual studio 2012\Projects\ArduninoBasico\ArduninoBasico\obj\Debug\ArduninoBasico.csprojResolveAssemblyReference.cache
+C:\Users\Investigación\Documents\Visual Studio 2012\Projects\ArduinoLectura\ArduninoBasico\bin\Debug\ArduninoBasico.exe.config
+C:\Users\Investigación\Documents\Visual Studio 2012\Projects\ArduinoLectura\ArduninoBasico\obj\Debug\ArduninoBasico.exe
+C:\Users\Investigación\Documents\Visual Studio 2012\Projects\ArduinoLectura\ArduninoBasico\obj\Debug\ArduninoBasico.pdb
+C:\Users\Investigación\Documents\Visual Studio 2012\Projects\ArduinoLectura\ArduninoBasico\obj\Debug\ArduninoBasico.csprojResolveAssemblyReference.cache
+C:\Users\Investigación\Documents\Visual Studio 2012\Projects\ArduinoLectura\ArduninoBasico\obj\Debug\ArduninoBasico.Form1.resources
+C:\Users\Investigación\Documents\Visual Studio 2012\Projects\ArduinoLectura\ArduninoBasico\obj\Debug\ArduninoBasico.Properties.Resources.resources
+C:\Users\Investigación\Documents\Visual Studio 2012\Projects\ArduinoLectura\ArduninoBasico\obj\Debug\ArduninoBasico.csproj.GenerateResource.Cache
+C:\Users\Investigación\Documents\Visual Studio 2012\Projects\ArduinoLectura\ArduninoBasico\bin\Debug\ArduninoBasico.exe
+C:\Users\Investigación\Documents\Visual Studio 2012\Projects\ArduinoLectura\ArduninoBasico\bin\Debug\ArduninoBasico.pdb
+C:\Users\Usuario\Documents\Visual Studio 2012\Projects\ArduinoLectura\ArduninoBasico\bin\Debug\ArduninoBasico.exe.config
+C:\Users\Usuario\Documents\Visual Studio 2012\Projects\ArduinoLectura\ArduninoBasico\obj\Debug\ArduninoBasico.exe
+C:\Users\Usuario\Documents\Visual Studio 2012\Projects\ArduinoLectura\ArduninoBasico\obj\Debug\ArduninoBasico.pdb
+C:\Git\robot-movil-ia\ArduinoLectura_v1\ArduninoBasico\bin\Debug\ArduninoBasico.exe.config
+C:\Git\robot-movil-ia\ArduinoLectura_v1\ArduninoBasico\bin\Debug\ArduninoBasico.exe
+C:\Git\robot-movil-ia\ArduinoLectura_v1\ArduninoBasico\bin\Debug\ArduninoBasico.pdb
+C:\Git\robot-movil-ia\ArduinoLectura_v1\ArduninoBasico\obj\Debug\ArduninoBasico.csprojAssemblyReference.cache
+C:\Git\robot-movil-ia\ArduinoLectura_v1\ArduninoBasico\obj\Debug\ArduninoBasico.Form1.resources
+C:\Git\robot-movil-ia\ArduinoLectura_v1\ArduninoBasico\obj\Debug\ArduninoBasico.Properties.Resources.resources
+C:\Git\robot-movil-ia\ArduinoLectura_v1\ArduninoBasico\obj\Debug\ArduninoBasico.csproj.GenerateResource.cache
+C:\Git\robot-movil-ia\ArduinoLectura_v1\ArduninoBasico\obj\Debug\ArduninoBasico.exe
+C:\Git\robot-movil-ia\ArduinoLectura_v1\ArduninoBasico\obj\Debug\ArduninoBasico.pdb

@@ -16,7 +16,7 @@ namespace ArduninoBasico
         public Form1()
         {
             InitializeComponent();
-            arduino = new Arduino("COM24");
+            arduino = new Arduino("COM5");
         }
 
         private void button1_Click(object sender, EventArgs e)
