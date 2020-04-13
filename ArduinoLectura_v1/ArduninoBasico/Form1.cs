@@ -40,6 +40,7 @@ namespace ArduninoBasico
             const double t = 0.1; //periodo de muestreo
             const double r = 3.0; //radio de las llantas
             const double b = 14.5; //base (distancia entre ruedas)
+            const int ppv = 40; //pulsos por vuelta
             double v_i; //velocidad de rueda izquierda
             double v_d; //velocidad de rueda derecha
             double v; //velocidad instantánea en el centro del robot
@@ -57,11 +58,11 @@ namespace ArduninoBasico
                 pulsos_i1 = Convert.ToInt16(arr[0]);
                 pulsos_d1 = Convert.ToInt16(arr[1]);
 
-                // calcular velocidades
-                v_i = (pulsos_i1 - pulsos_i0) * 2 * Math.PI * r / t;
-                v_d = (pulsos_d1 - pulsos_d0) * 2 * Math.PI * r / t;
-                v = (v_i + v_d) / 2;
-                w = (v_i + v_d) / b;
+                // calcular velocidades (cm/s)
+                v_i = (pulsos_i1 - pulsos_i0) * 2 * Math.PI * r / (t * ppv);
+                v_d = (pulsos_d1 - pulsos_d0) * 2 * Math.PI * r / (t * ppv);
+                v = (v_i + v_d) / 2; // cm/s
+                w = (v_i + v_d) / b; // rad/s
 
                 // actualizar contadores previos
                 pulsos_i0 = pulsos_i1;
@@ -71,8 +72,8 @@ namespace ArduninoBasico
                 x += v * Math.Cos(gama) * t;
                 y += v * Math.Sin(gama) * t;
                 gama += w * t;
-                if (gama < 0) gama += 2 * Math.PI;
-                if (gama > 2 * Math.PI) gama -= 2 * Math.PI;
+                if (gama < 0) gama += (2 * Math.PI);
+                if (gama > 2 * Math.PI) gama -= (2 * Math.PI);
                 a = gama * 180 / Math.PI; //obtener ángulo en grados
 
                 // mostrar resultado
@@ -141,7 +142,7 @@ namespace ArduninoBasico
             string p = Math.Round(pulsos).ToString(); //valor redondeado y convertido a string
 
             // las dos llantas deben generear el mismo número de pulsos y moverse a la misma velocidad
-            arduino.Escribir(p + "," + p + "," + textPwmLin.Text + "," + textPwmRot.Text + "\n");
+            arduino.Escribir(p + "," + p + "," + textPwmLin.Text + "," + textPwmLin.Text + "\n");
 
             //textX.Text = p.ToString();
             // Probar envío de cadenas que se interpretan en Arduino
@@ -164,7 +165,7 @@ namespace ArduninoBasico
             // las llantas deben girar en direcciones contrarias y ala misma velocidad
             double p_d = Math.Round(pulsos); //valor redondeado
             double p_i = -p_d; //valor * -1
-            arduino.Escribir(p_d.ToString() + "," + p_i.ToString() + "," + textPwmLin.Text + "," + textPwmRot.Text + "\n");
+            arduino.Escribir(p_i.ToString() + "," + p_d.ToString() + "," + textPwmRot.Text + "," + textPwmRot.Text + "\n");
 
             //textY.Text = p_d.ToString();
             //textGama.Text = p_i.ToString();
