@@ -1,6 +1,6 @@
 // Robot Móvil con IA
 // Equipo Dinamita
-// Recibe 4 valores por puerto serial
+// Recibe 2 tipos de comandos por puerto serial: mover llantas y mover servo
 // Envía contadores de encoders
 
 // Historial de versiones
@@ -9,7 +9,8 @@
 // v0.3 Envía conteo de pulsos y recibe comandos para movimiento
 // v0.4 Corrección de bug en el que los motores no se detienen
 // v0.4.1 Hacer que el servo rote continuamente
-// v0.5 Calcular la posición o coneteo meta usando el conteo actual no la posición teórica
+// v0.4.2 Calcular la posición meta usando el contador actual no la meta anterior
+// v0.5 Interpreta 2 tipos de comandos: mover llantas y mover servo
 
 // definición de pines
 #define PIN_E1 8  //encoder 1
@@ -35,8 +36,9 @@ Encoder encoder2(PIN_E2);
 Servo myservo;
 
 // Variables globales
-int pos = 0; // posición del servo de 0 a 1800, se divide entre 10 para obtener los grados
-int incre = 2; //incremento de posición del servo
+//int pos = 0; // posición del servo en grados (ya no se usa)
+//int incre = 2; //incremento de posición del servo (ya no se usa)
+int pos_final_servo = 0; //posición en grados
 int pwm_i = 0; //pwm aplicado al motor izquierdo
 int pwm_d = 0; //pwm aplicado al motor derecho
 int delta_i = 0; //pulsos que debe sumar o restar el encoder izquierdo
@@ -73,9 +75,9 @@ void setup() {
   //debug
   //pinMode(13, OUTPUT);
   // inicializar encoders
-  encoder1.e = digitalRead(PIN_E1); //estado actual
+  encoder1.e = digitalRead(PIN_E1); //estado actual del encoder
   encoder1.ePrev = encoder1.e; //estado previo igual al actual
-  encoder2.e = digitalRead(PIN_E2); //estado actual
+  encoder2.e = digitalRead(PIN_E2); //estado actual del encoder
   encoder2.ePrev = encoder2.e; //estado previo igual al actual
   delay(300);
 }
@@ -85,31 +87,40 @@ void loop() {
   while (Serial.available() > 0) {//si hay datos disponibles
     char c = Serial.read(); //obtener 1 caracter
 
-    if (c == ',' or c == '\n') { //si el caracter es un separador
+    if (c == '\n') { //si el caracter es salto de línea
       buffer_entrada[buffer_pos] = 0; //agregar null terminator
       buffer_pos = 0; //volver al inicio del buffer
+      arr_pos = 0; //volver al inicio del array
 
-      // convertir buffer a entero
-      arr_int[arr_pos] = atoi(buffer_entrada);
+      // se ha recibido una línea completa
+      // ¿qué acción debe realizar el robot?
+      // el buffer contiene ahora una letra, esa letra indica la acción
+      switch (buffer_entrada[0])
+      {
+        case 'a': // mover llantas
+          // asignar valores del array a variables delta y pwm
+          delta_i = arr_int[0];
+          delta_d = arr_int[1];
+          pwm_i = arr_int[2];
+          pwm_d = arr_int[3];
 
-      if (c == '\n') {//si el caracter es salto de línea
-        arr_pos = 0; //volver al inicio del array
+          // calcular posición meta
+          meta_i = encoder1.cont + delta_i;
+          meta_d = encoder2.cont + delta_d;
+          break;
 
-        // asignar valores del array a variables delta y pwm
-        delta_i = arr_int[0];
-        delta_d = arr_int[1];
-        pwm_i = arr_int[2];
-        pwm_d = arr_int[3];
-
-        // calcular posición meta
-        meta_i = encoder1.cont + delta_i;
-        meta_d = encoder2.cont + delta_d;
-      }
-      else {//si no es salto de línea
-        arr_pos ++; //incrementar posición en array
+        case 'b': // mover servo
+          pos_final_servo = arr_int[0];
+          break;
       }
     }
-    else { //si no es un separador
+    else if (c == ',') {//se el caracter es un separador
+      buffer_entrada[buffer_pos] = 0; //agregar null terminator
+      arr_int[arr_pos] = atoi(buffer_entrada); // convertir buffer a entero
+      buffer_pos = 0; //volver al inicio del buffer
+      arr_pos ++; //incrementar posición en array
+    }
+    else { //es un número o letra
       buffer_entrada[buffer_pos] = c; //agregar caracter al buffer
       buffer_pos ++; //incrementar posición
     }
@@ -148,11 +159,12 @@ void loop() {
   encoder2.pulso( delta_d);
 
   // rotar servo
-  pos += incre; //sumar incremento
-  myservo.write(pos / 10); //mover servo a la nueva posición
-  if ((pos <= 0) or (pos >= 1800)) { //si llega al limite
-    incre *= -1; //incremento cambia de signo
-  }
+  myservo.write(pos_final_servo); //mover servo a la nueva posición
+  //pos += incre; //sumar incremento
+  //myservo.write(pos / 10); //mover servo a la nueva posición
+  //if ((pos <= 0) or (pos >= 1800)) { //si llega al limite
+  //  incre *= -1; //incremento cambia de signo
+  //}
 
   // Enviar información de encoders, servo y sensor
   // Valores separados por comas
@@ -160,16 +172,11 @@ void loop() {
   Serial.print(',');
   Serial.print(encoder2.cont);
   Serial.print(',');
-  Serial.print(pos / 10);
+  Serial.print(pos_final_servo);
   Serial.print(',');
-  Serial.println(sharp1.distancia(10));
+  Serial.println(sharp1.distancia(10)); //aquí se mide la distancia
 
   delay(7); //retardo entre loops
 }
 
-// Función signo
-int sign(int x) {
-  if (x < 0) return -1;
-  if (x == 0) return 0;
-  return 1;
-}
+// Fin del programa :)

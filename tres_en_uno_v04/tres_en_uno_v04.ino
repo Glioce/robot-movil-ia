@@ -9,6 +9,7 @@
 // v0.3 Envía conteo de pulsos y recibe comandos para movimiento
 // v0.4 Corrección de bug en el que los motores no se detienen
 // v0.4.1 Hacer que el servo rote continuamente
+// v0.4.2 Calcular la posición meta usando el contador actual no la meta anterior
 
 // definición de pines
 #define PIN_E1 8  //encoder 1
@@ -101,8 +102,8 @@ void loop() {
         pwm_d = arr_int[3];
 
         // calcular posición meta
-        meta_i += delta_i;
-        meta_d += delta_d;
+        meta_i = encoder1.cont + delta_i;
+        meta_d = encoder2.cont + delta_d;
       }
       else {//si no es salto de línea
         arr_pos ++; //incrementar posición en array
