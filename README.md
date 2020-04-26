@@ -26,3 +26,7 @@ https://docs.microsoft.com/en-us/dotnet/csharp/how-to/parse-strings-using-split
 https://docs.microsoft.com/en-us/dotnet/api/system.stringsplitoptions?view=netframework-4.8#System_StringSplitOptions_RemoveEmptyEntries  
 Recibir string y convertir a enteros Arduino
 https://arduino.stackexchange.com/questions/1013/how-do-i-split-an-incoming-string
+
+Programa para dibujar C#  
+https://www.youtube.com/watch?v=k0BgCjyRSak  
+https://www.youtube.com/watch?v=SFwBGVcxaRo  
