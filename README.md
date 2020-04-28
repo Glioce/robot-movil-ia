@@ -30,3 +30,9 @@ https://arduino.stackexchange.com/questions/1013/how-do-i-split-an-incoming-stri
 Programa para dibujar C#  
 https://www.youtube.com/watch?v=k0BgCjyRSak  
 https://www.youtube.com/watch?v=SFwBGVcxaRo  
+
+Documentación Interrupciones Arduino  
+https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt/  
+
+Ejemplos programas sensor Sharp  
+https://naylampmechatronics.com/blog/55_tutorial-sensor-de-distancia-sharp.html  
