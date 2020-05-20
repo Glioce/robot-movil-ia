@@ -34,9 +34,8 @@ namespace AStar
             {
                 tablero[0, i].Value = i;
                 tablero[i, 0].Value = i;  //Escribe índices
-                tablero.Columns[i].Width = 20;   // Fija dimensiones de las celdas
                 tablero.Rows[i].Height = 20;
-
+                tablero.Columns[i].Width = 20;   // Fija dimensiones de las celdas
             }
         }
 
@@ -53,27 +52,31 @@ namespace AStar
             {
                 tablero.CurrentCell.Style.BackColor = Color.Red;
                 tablero.CurrentCell.Value = "I";
-                a.inicio.X = tablero.CurrentCell.ColumnIndex;
-                a.inicio.Y = tablero.CurrentCell.RowIndex;
-                labelInicio.Text = "(" + a.inicio.X + "," + a.inicio.Y + ")";
+                labelInicio.Text = "(" + tablero.CurrentCell.ColumnIndex + "," + tablero.CurrentCell.RowIndex + ")";
+                //labelInicio.Text = "(" + a.inicio.X + "," + a.inicio.Y + ")";
+                //a.inicio.X = tablero.CurrentCell.ColumnIndex;
+                //a.inicio.Y = tablero.CurrentCell.RowIndex;
 
             }
             if (radioButtonMeta.Checked)
             {
                 tablero.CurrentCell.Style.BackColor = Color.Green;
                 tablero.CurrentCell.Value = "M";
-                a.meta.X = tablero.CurrentCell.ColumnIndex;
-                a.meta.Y = tablero.CurrentCell.RowIndex;
-                labelMeta.Text = "(" + a.meta.X + "," + a.meta.Y + ")";
+                labelMeta.Text = "(" + tablero.CurrentCell.ColumnIndex + "," + tablero.CurrentCell.RowIndex + ")";
+                //labelMeta.Text = "(" + a.meta.X + "," + a.meta.Y + ")";
+                //a.meta.X = tablero.CurrentCell.ColumnIndex;
+                //a.meta.Y = tablero.CurrentCell.RowIndex;
             }
             if (radioButtonObstaculo.Checked)
             {
                 tablero.CurrentCell.Style.BackColor = Color.Black;
+                tablero.CurrentCell.Value = "O";
                 // no guarda otra info en el objeto a (AStar)
             }
             if (radioButtonNinguno.Checked)
             {
                 tablero.CurrentCell.Style.BackColor = Color.White;
+                tablero.CurrentCell.Value = "";
             }
 
             int j = tablero.CurrentCell.ColumnIndex;
@@ -85,7 +88,7 @@ namespace AStar
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            // parece que este botón tampoco existe en Form1
+            // este botón existe en Form1?
         }
     }
 }

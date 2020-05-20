@@ -34,3 +34,12 @@ C:\Git\robot-movil-ia\AStar\AStar\obj\Debug\AStar.Properties.Resources.resources
 C:\Git\robot-movil-ia\AStar\AStar\obj\Debug\AStar.csproj.GenerateResource.cache
 C:\Git\robot-movil-ia\AStar\AStar\obj\Debug\AStar.exe
 C:\Git\robot-movil-ia\AStar\AStar\obj\Debug\AStar.pdb
+C:\Git\robot-movil-ia\AStar_01\AStar\bin\Debug\AStar.exe.config
+C:\Git\robot-movil-ia\AStar_01\AStar\bin\Debug\AStar.exe
+C:\Git\robot-movil-ia\AStar_01\AStar\bin\Debug\AStar.pdb
+C:\Git\robot-movil-ia\AStar_01\AStar\obj\Debug\AStar.csprojAssemblyReference.cache
+C:\Git\robot-movil-ia\AStar_01\AStar\obj\Debug\AStar.Form1.resources
+C:\Git\robot-movil-ia\AStar_01\AStar\obj\Debug\AStar.Properties.Resources.resources
+C:\Git\robot-movil-ia\AStar_01\AStar\obj\Debug\AStar.csproj.GenerateResource.cache
+C:\Git\robot-movil-ia\AStar_01\AStar\obj\Debug\AStar.exe
+C:\Git\robot-movil-ia\AStar_01\AStar\obj\Debug\AStar.pdb
