@@ -21,15 +21,15 @@ namespace AStar
         // costo total estimado
         public double f { get; set; }
 
-        public Nodo[] hijo; // esto se puede llamar "vecino"?
+        public Nodo[] hijo; // esto se puede llamar "vecino"
         public int numhijos = 0;
-        public Nodo padre; // este el nodo anterior en el camino?
+        public Nodo padre; // este el nodo anterior en el camino
         public bool es_obstaculo = false;
 
         //--------------------------------------------------------------
         public Nodo(int xx, int yy)
         {
-            hijo = new Nodo[4]; //8];
+            hijo = new Nodo[8]; //8];
             // inicia con 8 hijos, 
             // eso significa que el camino puede ser en diagonal (agrega un poco de dificultad)
 

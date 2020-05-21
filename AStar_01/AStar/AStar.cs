@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -14,7 +11,7 @@ namespace AStar
         public Nodo meta = null;
         DataGridView tablero;
 
-        List<Nodo> Open, Closed;
+        List<Nodo> Open;//, Closed;
 
         //Constructor
         public AStar(DataGridView Tablero)
@@ -23,7 +20,7 @@ namespace AStar
             //meta = new Nodo();
             tablero = Tablero;
             Open = new List<Nodo>();
-            Closed = new List<Nodo>();
+            //Closed = new List<Nodo>();
         }
         //------------------------------------------------
 
@@ -98,6 +95,15 @@ namespace AStar
                     // Abajo
                     if (actual.Y < 20) actual.Agregar_hijo(matriz[i, j + 1]);
 
+                    // Diagonal arriba derecha
+                    if (actual.X < 20 && actual.Y > 1) actual.Agregar_hijo(matriz[i + 1, j - 1]);
+                    // Diagonal arriba izquierda
+                    if (actual.X > 1 && actual.Y > 1) actual.Agregar_hijo(matriz[i - 1, j - 1]);
+                    // Diagonal abajo izquierda
+                    if (actual.X > 1 && actual.Y < 20) actual.Agregar_hijo(matriz[i - 1, j + 1]);
+                    // Diagonal abajo derecha
+                    if (actual.X < 20 && actual.Y < 20) actual.Agregar_hijo(matriz[i + 1, j + 1]);
+
                     Console.Write(actual.numhijos.ToString() + " ");
                 }
                 Console.WriteLine();
@@ -127,8 +133,8 @@ namespace AStar
                 if (actual == meta) //si llegamos a la meta, terminar ciclo
                 {
                     Console.WriteLine("Algoritmo completado");
-                    Console.WriteLine("Trazando camino");
                     TrazarCamino(meta);
+                    Console.WriteLine("Camino trazado");
                     return 1;
                 }
 
