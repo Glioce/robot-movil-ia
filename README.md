@@ -36,3 +36,9 @@ https://www.arduino.cc/reference/en/language/functions/external-interrupts/attac
 
 Ejemplos programas sensor Sharp  
 https://naylampmechatronics.com/blog/55_tutorial-sensor-de-distancia-sharp.html  
+
+Algoritmo de Dijkstra  
+https://es.wikipedia.org/wiki/Algoritmo_de_Dijkstra  
+https://es.wikipedia.org/wiki/Anexo:Ejemplo_de_Algoritmo_de_Dijkstra  
+
+Triangulación  
