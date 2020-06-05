@@ -1,0 +1,31 @@
+c:\users\rodrigo\documents\visual studio 2015\Projects\Bug\Bug\bin\Debug\Bug.exe.config
+c:\users\rodrigo\documents\visual studio 2015\Projects\Bug\Bug\bin\Debug\Bug.exe
+c:\users\rodrigo\documents\visual studio 2015\Projects\Bug\Bug\bin\Debug\Bug.pdb
+c:\users\rodrigo\documents\visual studio 2015\Projects\Bug\Bug\obj\Debug\Bug.csprojResolveAssemblyReference.cache
+c:\users\rodrigo\documents\visual studio 2015\Projects\Bug\Bug\obj\Debug\Bug.Form1.resources
+c:\users\rodrigo\documents\visual studio 2015\Projects\Bug\Bug\obj\Debug\Bug.Properties.Resources.resources
+c:\users\rodrigo\documents\visual studio 2015\Projects\Bug\Bug\obj\Debug\Bug.csproj.GenerateResource.Cache
+c:\users\rodrigo\documents\visual studio 2015\Projects\Bug\Bug\obj\Debug\Bug.exe
+c:\users\rodrigo\documents\visual studio 2015\Projects\Bug\Bug\obj\Debug\Bug.pdb
+C:\Users\Investigación\Documents\Visual Studio 2012\Projects\Bug\Bug\bin\Debug\Bug.exe.config
+C:\Users\Investigación\Documents\Visual Studio 2012\Projects\Bug\Bug\obj\Debug\Bug.exe
+C:\Users\Investigación\Documents\Visual Studio 2012\Projects\Bug\Bug\obj\Debug\Bug.pdb
+C:\Users\Investigación\Documents\Visual Studio 2012\Projects\Bug\Bug\bin\Debug\Bug.exe
+C:\Users\Investigación\Documents\Visual Studio 2012\Projects\Bug\Bug\bin\Debug\Bug.pdb
+C:\Users\Investigación\Documents\Visual Studio 2012\Projects\Bug\Bug\obj\Debug\Bug.csprojResolveAssemblyReference.cache
+C:\Users\Investigación\Documents\Visual Studio 2012\Projects\Bug\Bug\obj\Debug\Bug.Form1.resources
+C:\Users\Investigación\Documents\Visual Studio 2012\Projects\Bug\Bug\obj\Debug\Bug.Properties.Resources.resources
+C:\Users\Investigación\Documents\Visual Studio 2012\Projects\Bug\Bug\obj\Debug\Bug.csproj.GenerateResource.Cache
+C:\Users\Rodrigo\Documents\Visual Studio 2015\Bug\Bug\bin\Debug\Bug.exe.config
+C:\Users\Rodrigo\Documents\Visual Studio 2015\Bug\Bug\obj\Debug\Bug.exe
+C:\Users\Rodrigo\Documents\Visual Studio 2015\Bug\Bug\obj\Debug\Bug.pdb
+C:\Git\robot-movil-ia\Bug\Bug\bin\Debug\Bug.exe.config
+C:\Git\robot-movil-ia\Bug\Bug\bin\Debug\Bug.exe
+C:\Git\robot-movil-ia\Bug\Bug\bin\Debug\Bug.pdb
+C:\Git\robot-movil-ia\Bug\Bug\obj\Debug\Bug.csprojAssemblyReference.cache
+C:\Git\robot-movil-ia\Bug\Bug\obj\Debug\Bug.Form1.resources
+C:\Git\robot-movil-ia\Bug\Bug\obj\Debug\Bug.Properties.Resources.resources
+C:\Git\robot-movil-ia\Bug\Bug\obj\Debug\Bug.csproj.GenerateResource.cache
+C:\Git\robot-movil-ia\Bug\Bug\obj\Debug\Bug.exe
+C:\Git\robot-movil-ia\Bug\Bug\obj\Debug\Bug.pdb
+C:\Git\robot-movil-ia\Bug\Bug\obj\Debug\Bug.csproj.CoreCompileInputs.cache
