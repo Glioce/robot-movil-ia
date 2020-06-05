@@ -34,6 +34,8 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonCrearNodos = new System.Windows.Forms.Button();
+            this.textBoxN = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -49,7 +51,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(33, 573);
+            this.button1.Location = new System.Drawing.Point(33, 540);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -71,7 +73,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(273, 14);
+            this.radioButton1.Location = new System.Drawing.Point(234, 11);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(95, 17);
             this.radioButton1.TabIndex = 3;
@@ -83,7 +85,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(273, 41);
+            this.radioButton2.Location = new System.Drawing.Point(234, 41);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(90, 17);
             this.radioButton2.TabIndex = 4;
@@ -96,16 +98,36 @@
             this.panel1.Controls.Add(this.radioButton1);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Location = new System.Drawing.Point(144, 532);
+            this.panel1.Location = new System.Drawing.Point(188, 532);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(389, 74);
+            this.panel1.Size = new System.Drawing.Size(345, 74);
             this.panel1.TabIndex = 5;
+            // 
+            // buttonCrearNodos
+            // 
+            this.buttonCrearNodos.Location = new System.Drawing.Point(33, 573);
+            this.buttonCrearNodos.Name = "buttonCrearNodos";
+            this.buttonCrearNodos.Size = new System.Drawing.Size(75, 23);
+            this.buttonCrearNodos.TabIndex = 6;
+            this.buttonCrearNodos.Text = "Crear Nodos";
+            this.buttonCrearNodos.UseVisualStyleBackColor = true;
+            this.buttonCrearNodos.Click += new System.EventHandler(this.buttonCrearNodos_Click);
+            // 
+            // textBoxN
+            // 
+            this.textBoxN.Location = new System.Drawing.Point(114, 575);
+            this.textBoxN.Name = "textBoxN";
+            this.textBoxN.Size = new System.Drawing.Size(46, 20);
+            this.textBoxN.TabIndex = 7;
+            this.textBoxN.Text = "10";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(579, 618);
+            this.Controls.Add(this.textBoxN);
+            this.Controls.Add(this.buttonCrearNodos);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
@@ -115,6 +137,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -126,6 +149,8 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button buttonCrearNodos;
+        private System.Windows.Forms.TextBox textBoxN;
     }
 }
 

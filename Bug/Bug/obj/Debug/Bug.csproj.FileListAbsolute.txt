@@ -28,3 +28,4 @@ C:\Git\robot-movil-ia\Bug\Bug\obj\Debug\Bug.Properties.Resources.resources
 C:\Git\robot-movil-ia\Bug\Bug\obj\Debug\Bug.csproj.GenerateResource.cache
 C:\Git\robot-movil-ia\Bug\Bug\obj\Debug\Bug.exe
 C:\Git\robot-movil-ia\Bug\Bug\obj\Debug\Bug.pdb
+C:\Git\robot-movil-ia\Bug\Bug\obj\Debug\Bug.csproj.CoreCompileInputs.cache
