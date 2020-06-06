@@ -39,3 +39,13 @@ C:\Users\Adm\Documents\GitHub\robot-movil-ia\Bug_02\Bug\obj\Debug\Bug.csproj.Gen
 C:\Users\Adm\Documents\GitHub\robot-movil-ia\Bug_02\Bug\obj\Debug\Bug.csproj.CoreCompileInputs.cache
 C:\Users\Adm\Documents\GitHub\robot-movil-ia\Bug_02\Bug\obj\Debug\Bug.exe
 C:\Users\Adm\Documents\GitHub\robot-movil-ia\Bug_02\Bug\obj\Debug\Bug.pdb
+C:\Git\robot-movil-ia\Bug_02\Bug\bin\Debug\Bug.exe.config
+C:\Git\robot-movil-ia\Bug_02\Bug\bin\Debug\Bug.exe
+C:\Git\robot-movil-ia\Bug_02\Bug\bin\Debug\Bug.pdb
+C:\Git\robot-movil-ia\Bug_02\Bug\obj\Debug\Bug.csprojAssemblyReference.cache
+C:\Git\robot-movil-ia\Bug_02\Bug\obj\Debug\Bug.Form1.resources
+C:\Git\robot-movil-ia\Bug_02\Bug\obj\Debug\Bug.Properties.Resources.resources
+C:\Git\robot-movil-ia\Bug_02\Bug\obj\Debug\Bug.csproj.GenerateResource.cache
+C:\Git\robot-movil-ia\Bug_02\Bug\obj\Debug\Bug.csproj.CoreCompileInputs.cache
+C:\Git\robot-movil-ia\Bug_02\Bug\obj\Debug\Bug.exe
+C:\Git\robot-movil-ia\Bug_02\Bug\obj\Debug\Bug.pdb

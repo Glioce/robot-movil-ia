@@ -17,8 +17,7 @@ namespace Bug
         List<Nodo> nodos; // lista de todos los nodos
         List<Nodo> cola; // cola de prioridad
 
-        Nodo inicio;
-        Nodo meta;
+        //Nodo inicio, meta;
 
         private double cx, cy, cr; //variables para calcular circunferencia que pasa por 3 puntos
 
@@ -31,6 +30,7 @@ namespace Bug
         {
             // constructor - recibir lista de nodos
             this.nodos = nodos;
+            cola = new List<Nodo>();
         }
 
         //------------------------------------------------------------------------------
@@ -52,20 +52,20 @@ namespace Bug
                         // luego revisar que no hay otro nodo en la circunferencia
                         if (Circunferencia3Nodos(nodos[i], nodos[j], nodos[k]))
                         {
-                            if (ComprobarDelaunay(i, j , k) == 1)
+                            if (ComprobarDelaunay(i, j, k) == 1)
                             {
                                 // Los 3 nodos son  pueden ser vecinos
                                 // revisar que la líneas de conexión no cruzan pixeles negros
 
-                                if (nodos[i].c.PuedeVerA( nodos[j].c))
+                                if (nodos[i].c.PuedeVerA(nodos[j].c))
                                 {
-                                    nodos[i].Agregar_vecino( nodos[j]);
+                                    nodos[i].Agregar_vecino(nodos[j]);
                                 }
-                                if (nodos[i].c.PuedeVerA( nodos[k].c))
+                                if (nodos[i].c.PuedeVerA(nodos[k].c))
                                 {
                                     nodos[i].Agregar_vecino(nodos[k]);
                                 }
-                                if (nodos[j].c.PuedeVerA( nodos[k].c))
+                                if (nodos[j].c.PuedeVerA(nodos[k].c))
                                 {
                                     nodos[j].Agregar_vecino(nodos[k]);
                                 }
@@ -91,10 +91,10 @@ namespace Bug
                         (float)_n.y,
                         (float)_n.vecino[j].x,
                         (float)_n.vecino[j].y,
-                        Color.Blue);
+                        Color.YellowGreen);
                 }
             }
-                
+
         }
         //------------------------------------------------------------------------------
         public bool Circunferencia3Nodos(Nodo n1, Nodo n2, Nodo n3)
@@ -156,6 +156,89 @@ namespace Bug
             }
 
             return 1; // no contiene otros nodos
+        }
+        //------------------------------------------------------------------------------
+        public int EjecutarDijkstra(Nodo inicio, Nodo meta)
+        {
+            // Dejecutar algoritmo de Dijkstra (sobre la lista de nodos)
+
+            // En este momento todos los nodos de la lista tienen
+            // dist = -1
+            // padre = null
+            // visto = false
+
+            if (inicio == null || meta == null)
+            {
+                Console.WriteLine("Falta inicio y/o meta!");
+                return 0;
+            }
+
+            inicio.dist = 0; //distancia cero
+            cola.Add(inicio); //agregar inicio a la cola
+            Nodo actual; //se usará en el ciclo
+            double dTemp; //distancia temporal (tentativa)
+
+            while (cola.Count() > 0) //mientras la cola contiene nodos
+            {
+                actual = cola[0]; //extraer nodo
+                cola.RemoveAt(0); //borrar
+                actual.visto = true; //se marca como visto
+
+                if (actual == meta) //llegamos a la meta
+                {
+                    Console.WriteLine("Algoritmo completado");
+                    return 1;
+                }
+
+                // si no hemos llegado a la meta, continuar
+                foreach (Nodo v in actual.vecino)
+                {
+                    if (v.visto == false)
+                    {
+                        dTemp = actual.dist + actual.Distancia_a_nodo(v);
+                        if (dTemp < v.dist || v.dist == -1) //si la distancia es menor
+                        {
+                            v.dist = dTemp; //asignar o actualizar distancia
+                            v.padre = actual; //asignar padre
+
+                            bool agregado = false;
+                            for (int j = 0; j < cola.Count; j++) //recorrer cola
+                            {
+                                if (cola[j].dist > v.dist) //si el valor de un elemento en el conjunto es mayor al valor de v
+                                {
+                                    cola.Insert(j, v); //insertar para ocupar su posición
+                                    agregado = true; //ya está agregado
+                                    break; //terminar for
+                                }
+
+                            }
+                            //si no se agregó en el for anterior, es porque el conjunto está vacío o no hay un nodo con f mayor
+                            //agregar en la última posición
+                            if (agregado == false) cola.Add(v);
+                        }
+                    }
+                }
+            }
+            Console.WriteLine("No hay solución");
+            return 0;
+        }
+        //------------------------------------------------------------------------------
+        public void TrazarCamino(Nodo inicio, Nodo meta)
+        {
+            // Cuando el argoritmo se ha terminado con éxito se ejecuta esta función
+            // Inicia con el nodo meta
+            Nodo nd = meta;
+            while (nd != inicio)
+            {
+                //tablero[nd.X, nd.Y].Style.BackColor = Color.Yellow;
+                nd.c.DibujarLinea(
+                    (float)nd.x,
+                    (float)nd.y,
+                    (float)nd.padre.x,
+                    (float)nd.padre.y,
+                    Color.Red);
+                nd = nd.padre;
+            }
         }
     }
 }

@@ -23,7 +23,7 @@ namespace Bug
         public Circulo c; //se usa para dibujar el nodo
 
         public List<Nodo> vecino; //lista de nodos vecinos, asignados después de la triangulación
-        Nodo padre; //indica el nodo precedente en la ruta más corta
+        public Nodo padre; //indica el nodo precedente en la ruta más corta
 
         //------------------------------------------------------------------------------
         public Nodo(double x, double y, Circulo c)
