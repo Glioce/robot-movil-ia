@@ -136,7 +136,7 @@ namespace Bug
             // Los índices a, b, c no se revisan porque forman parte de la circunferencia.
 
             // hay 3 posibles situaciones
-            // 0: hay nodos en el interior
+            // 0: sí hay nodos en el interior
             // 1: no hay nodos en el interior
             // 2: hay nodos en la circunferencia
 

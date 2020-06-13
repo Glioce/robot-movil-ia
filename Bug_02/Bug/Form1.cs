@@ -42,9 +42,10 @@ namespace Bug
         private void button2_Click(object sender, EventArgs e)
         {
             // Ejecutar algorimo
-            grafo.EjecutarDijkstra(inicio, meta);
-            grafo.TrazarCamino(inicio, meta);
-
+            if (grafo.EjecutarDijkstra(inicio, meta) == 1)
+            {
+                grafo.TrazarCamino(inicio, meta);
+            }
             //c.Dibujar();
             //cfinal.Dibujar(false);
             //c.moverA(cfinal.x, cfinal.y);
@@ -91,8 +92,10 @@ namespace Bug
             int _n = Convert.ToInt32(textBoxN.Text);
             int _x;
             int _y;
+            int _cont = 0; //contador de nodos creados
 
-            for (int i =0; i<_n; i++)
+            //for (int i =0; i<_n; i++)
+            while (_cont < _n)
             {
                 _x = _rand.Next(500); //de 0 a 500
                 _y = _rand.Next(500);
@@ -107,8 +110,10 @@ namespace Bug
                 {
                     Console.WriteLine("Nodo creado");
                     listaNodos.Add(new Nodo(_x, _y, _c));
+                    _c.Dibujar(false);
+                    _cont++;
                 }
-                _c.Dibujar(false);
+                //
                 //_c.DibujarLinea(_x, _y, _x + 20, _y, Color.Gray);
                 //_c.DibujarLinea(0, 0, 200, 50, Color.Gray);
             }

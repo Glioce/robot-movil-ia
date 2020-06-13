@@ -10,13 +10,9 @@ namespace Bug
     {
         // Esta clase crea nodos fijos
         // Se conectan a otros nodos con la lista de vecinos
-        // No se utilizan objetos para las aristas
 
         public double x; //coordenadas
         public double y;
-        //public double f; //costo total f = g  h
-        //public double g; //costo para llegar a este nodo
-        //public double h; //costo heurística
         public double dist = -1; //distancia recorrida, por ahora no está calculada
         public bool visto = false; //este nodo no ha sido visto (o visitado)
 
@@ -26,12 +22,12 @@ namespace Bug
         public Nodo padre; //indica el nodo precedente en la ruta más corta
 
         //------------------------------------------------------------------------------
-        public Nodo(double x, double y, Circulo c)
+        public Nodo(double _x, double _y, Circulo _c)
         {
             // constructor
-            this.x = x; //asignar coordenadas
-            this.y = y;
-            this.c = c;
+            this.x = _x; //asignar coordenadas
+            this.y = _y;
+            this.c = _c;
             vecino = new List<Nodo>(); //crear lista de vecinos
         }
         //------------------------------------------------------------------------------
